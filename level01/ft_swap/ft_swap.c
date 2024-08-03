@@ -1,8 +1,6 @@
 void	ft_swap(int *a, int *b)
 {
-	int	*c;
-	
-	c = b;
-	b = a;
-	a = c;
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
 }
